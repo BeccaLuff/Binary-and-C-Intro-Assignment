@@ -1,0 +1,10 @@
+all: random_mean
+
+random_mean: random_mean.c
+	gcc -Wall -Wextra -pedantic -Werror random_mean.c -o random_mean
+
+test: random_mean
+	./random_mean
+
+clean:
+	rm random_mean
